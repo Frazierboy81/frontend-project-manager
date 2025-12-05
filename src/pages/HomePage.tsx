@@ -2,7 +2,8 @@ function HomePage(){
     return(
     
     <div>
-        <h1 className="text-white">Home Page</h1>
+        <h1 className="flex justify-center text-2xl text-white font-bold">Tasks Manager Project</h1>
+        
     </div>)
     
 }
