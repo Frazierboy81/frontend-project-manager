@@ -33,16 +33,16 @@ function ProjectDetailsPage() {
 
 
   useEffect(() => {
-    // const fetchProjectTasks = async () => {
-    //     try {
-    //         const tasks = await apiClient.get(`/api/projects/${projectId}/tasks`);
-    //         // state
-    //         // loading error
-    //     } catch (error) {
-    //         console.error(error);  
-    //     }
-    // }
-    // // fetchProjectTasks()
+    const fetchProjectTasks = async () => {
+        try {
+            const tasks = await apiClient.get(`/api/projects/${projectId}/tasks`);
+            // state
+            // loading error
+        } catch (error) {
+            console.error(error);  
+        }
+    }
+    fetchProjectTasks()
   }, [projectId])
 
   return (
