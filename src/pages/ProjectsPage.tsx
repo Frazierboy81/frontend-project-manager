@@ -89,7 +89,7 @@ function ProjectsPage() {
           projects?.map((project) => (
             <div
               key={project._id}
-              className="text-white w-50 flex flex-col h-50 border border-red-500 p-2 text-center rounded"
+              className="text-white flex flex-col h-50 border border-red-500 p-2 text-center rounded"
             >
               <div className="font-bold">{project.name}</div>
               <div>{project.description}</div>
