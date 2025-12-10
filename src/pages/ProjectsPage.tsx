@@ -55,7 +55,7 @@ function ProjectsPage() {
 
       <form
         onSubmit={handleSubmit}
-        className="w-5 border p-2 h-50 mt-10 flex flex-col gap-2 rounded"
+        className="border p-2 h-50 mt-10 flex flex-col gap-2 rounded"
       >
         <label htmlFor="project-name">Project Name: </label>
         <input
@@ -89,7 +89,7 @@ function ProjectsPage() {
           projects?.map((project) => (
             <div
               key={project._id}
-              className="text-white flex flex-col h-50 border border-red-500 p-2 text-center rounded"
+              className="text-white w-50 flex flex-col h-50 border border-red-500 p-2 text-center rounded"
             >
               <div className="font-bold">{project.name}</div>
               <div>{project.description}</div>
