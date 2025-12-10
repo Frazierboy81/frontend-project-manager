@@ -18,6 +18,7 @@ function ProjectsPage() {
         const res = await apiClient.get("/api/projects");
         console.log(res.data);
         setProjects(res.data);
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (error: any) {
         console.log(error);
         setError(error.message);
@@ -38,6 +39,7 @@ function ProjectsPage() {
       setLoading(true);
       const res = await apiClient.post("/api/projects", { name, description });
       setProjects((prev) => [...prev, res.data]);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       console.error(error);
       setError(error.message);
@@ -83,8 +85,8 @@ function ProjectsPage() {
       {error && <div>{error}</div>}
 
       <div className="w-full flex gap-5 mt-10">
-        {projects &&
-          projects.map((project) => (
+        {projects.length > 0 &&
+          projects?.map((project) => (
             <div
               key={project._id}
               className="text-white w-50 flex flex-col h-50 border border-red-500 p-2 text-center rounded"
