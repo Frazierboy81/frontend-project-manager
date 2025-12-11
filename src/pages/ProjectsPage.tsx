@@ -61,7 +61,7 @@ function ProjectsPage() {
         <input
           type="text"
           name="project-name"
-          className="border"
+          className="border w-5"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
@@ -70,7 +70,7 @@ function ProjectsPage() {
         <input
           type="text"
           name="project-description"
-          className="border"
+          className="border w-5"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
@@ -94,7 +94,7 @@ function ProjectsPage() {
               <div className="font-bold">{project.name}</div>
               <div>{project.description}</div>
               <Link
-                to="/projects/:projectId"
+                to={`/projects/${project._id}`}
                 className="mt-auto bg-sky-500 rounded"
               >
                 See Project
