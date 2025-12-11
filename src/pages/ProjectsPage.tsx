@@ -55,7 +55,7 @@ function ProjectsPage() {
 
       <form
         onSubmit={handleSubmit}
-        className="border p-2 h-50 mt-10 flex flex-col gap-2 rounded"
+        className="w-72 border p-2 h-50 mt-10 flex flex-col gap-2 rounded"
       >
         <label htmlFor="project-name">Project Name: </label>
         <input
