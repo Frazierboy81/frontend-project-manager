@@ -61,7 +61,7 @@ function ProjectsPage() {
         <input
           type="text"
           name="project-name"
-          className="border w-5"
+          className="border w-64"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
@@ -70,7 +70,7 @@ function ProjectsPage() {
         <input
           type="text"
           name="project-description"
-          className="border w-5"
+          className="border w-64"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
