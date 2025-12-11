@@ -94,7 +94,7 @@ function ProjectsPage() {
               <div className="font-bold">{project.name}</div>
               <div>{project.description}</div>
               <Link
-                to={`/projects/${project._id}`}
+                to="/projects/:projectId"
                 className="mt-auto bg-sky-500 rounded"
               >
                 See Project
